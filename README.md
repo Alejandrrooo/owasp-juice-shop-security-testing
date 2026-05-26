@@ -82,23 +82,23 @@ Solving CTF-style challenges without impact on real flows
 
 
 
-5. How to replicate the environment
-How to replicate the environment
+### 5. How to replicate the environment
+#### How to replicate the environment
 
 The system under test (OWASP Juice Shop) runs locally using Docker.
 
-Start the container
+#### Start the container
 bash
 
 docker run -d --name juice-shop -p 3000:3000 bkimminich/juice-shop
 
-The application will be available at:
+#### The application will be available at:
 http://localhost:3000
 
-Stop the container
+#### Stop the container
 
 docker stop juice-shop
 
-Start the container again
+#### Start the container again
 
 docker start juice-shop
