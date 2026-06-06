@@ -25,13 +25,13 @@ User: qaa91136c5@test.com
 IDOR / Broken Access Control
 
 ### Severity
-
 High
 
-Affects:
+### Affects:
 - Privacy
 - Authorization
 - User separation
+
 ### Technical conclusion
 
 The endpoint requires authentication, but it does not apply authorization control over the ownership of the requested resource.
