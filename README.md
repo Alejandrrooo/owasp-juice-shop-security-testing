@@ -117,14 +117,16 @@ General conclusion: The system validates inconsistently between UI and API layer
 ## Repository Structure
     security-testing-owasp-juice-shop/
         README.md
+        bug-reports/
+          IDOR in basket endpoint
         analysis/
-            01-system-context.md
-            02-critical-flows.md
-            03-security-risk-map.md
+          01-system-context.md
+          02-critical-flows.md
+          03-security-risk-map.md
         strategy/
-            evidence-rules.md
-            scope.md
-            test-approach.md
+          evidence-rules.md
+          scope.md
+          test-approach.md
         notes/
           week-01-log/
           week-02-log/
