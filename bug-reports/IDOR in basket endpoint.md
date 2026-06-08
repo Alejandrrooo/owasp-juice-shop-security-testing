@@ -1,4 +1,5 @@
-## Bug Report — IDOR: Unauthorized Access to Other Users' Baskets via ID Manipulation
+## IDOR: Unauthorized Access to Other Users' Baskets via ID Manipulation
+
 ### Description
 Any authenticated API user can access another user's basket simply by changing the ID in the endpoint GET /rest/basket/{id}. The server validates authentication but does not validate whether the requested basket belongs to the authenticated user.
 
