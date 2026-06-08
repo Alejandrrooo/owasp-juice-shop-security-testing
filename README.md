@@ -119,6 +119,7 @@ General conclusion: The system validates inconsistently between UI and API layer
         README.md
         bug-reports/
           IDOR in basket endpoint
+          weak password policy
         analysis/
           01-system-context.md
           02-critical-flows.md
