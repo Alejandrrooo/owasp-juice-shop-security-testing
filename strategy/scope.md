@@ -1,32 +1,30 @@
 # Test Scope
+## Scope Objective
 
-## Objetivo del alcance
-El objetivo de este alcance es enfocar las pruebas en los flujos que tienen mayor impacto para el negocio, los usuarios y el sistema, priorizando la calidad y la prevención sobre la cobertura total. 
+The purpose of this scope is to focus testing on the workflows that have the greatest impact on the business, users, and system, prioritizing quality and prevention over complete coverage.
 
 ## In Scope
-- Registro / Login
-- Acceso a cuenta de usuario
-- Proceso de compra y checkout
-- Acciones administrativas críticas
-- Validaciones de seguridad asociadas a estos flujos
-- Pruebas manuales, API y automatización selectiva
+- User registration and login
+- User account access
+- Purchase and checkout process
+- Critical administrative actions
+- Security validations related to these workflows
+- Manual testing, API testing, and selective automation
 
 ## Out of Scope
-- Pruebas de estrés y carga
-- Ataques DoS
-- Hardening de infraestructura
-- Explotación avanzada de vulnerabilidades
-- Optimización de performance
-- Cambios al código fuente
+- Stress and load testing
+- DoS attacks
+- Infrastructure hardening
+- Advanced vulnerability exploitation
+- Performance optimization
+- Source code changes
 
-No están alineadas con el objetivo de QA enfocado en los flujos críticos y en la prevención de fallos.
+These activities are not aligned with the QA objective of focusing on critical workflows and preventing failures.
 
-## Definición de criticidad
-Un escenario se considera crítico si cumple al menos uno de estos puntos:
-
-- Expone datos sensibles
-- Permite acceso no autorizado
-- Afecta directamente ingresos
-- Compromete el control del sistema
-- Impacta la confianza del usuario
-
+## Definition of Criticality
+A scenario is considered critical if it meets at least one of the following criteria:
+- Exposes sensitive data
+- Allows unauthorized access
+- Directly affects revenue
+- Compromises system control
+- Impacts user trust

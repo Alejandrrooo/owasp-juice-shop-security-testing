@@ -1,19 +1,22 @@
 # Evidence Rules
+## Finding Documentation Format
 
-## Formato de documentación de hallazgos
-Cada hallazgo debe incluir: 
-- Qué se probó
-- Qué se esperaba
-- Qué ocurrió
-- Evidencia relacionada
-- Posible impacto 
+Each finding must include:
+- What was tested
+- What was expected
+- What happened
+- Related evidence
+- Potential impact
 
-## Convención de nombres
-Las evidencias se nombran de la siguiente forma:
-`flujo_tipo_fecha_descripcion.ext`
+## Naming Convention
+Evidence files must be named using the following format:
 
-Ejemplo:
-`login_api_2026-02-05_auth-bypass.png`
+    flow_type_date_description.ext
 
-## Almacenamiento de evidencia
-Para que sea más fácil revisarla y rastrearla, la evidencia se guarda de manera ordenada según su flujo y tipo de prueba.
+Example:
+
+    login_api_2026-02-05_auth-bypass.png
+
+##Evidence Storage
+
+To make evidence easier to review and track, it should be stored in an organized way based on the workflow and the type of test performed.
