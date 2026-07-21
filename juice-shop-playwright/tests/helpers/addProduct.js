@@ -1,3 +1,5 @@
+import { expect } from '@playwright/test';
+
 export async function addProduct(page, productName) {
     const productCard = page
         .locator('mat-card')
@@ -7,10 +9,12 @@ export async function addProduct(page, productName) {
 
     const basketCount = page.locator('.fa-layers-counter');
     await basketCount.click();
-
+   
     const productRow = page
         .locator('mat-row')
         .filter({ hasText: productName });
+
+    await expect(productRow).toBeVisible()
 
     return { basketCount, productRow };
 }
