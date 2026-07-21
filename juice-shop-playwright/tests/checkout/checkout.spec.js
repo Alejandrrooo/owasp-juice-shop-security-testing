@@ -16,13 +16,11 @@ test('addProductAndStartCheckout', async ({ page }) => {
     const productName = await getRandomProduct(page);
     const { productRow } = await addProduct(page, productName);
 
-    // confirmación de que el producto existe en el carrito
     await expect(productRow).toBeVisible();
 
-    // pasar a checkout
     const checkoutButton = page.locator('#checkoutButton');
     await checkoutButton.click();
 
-    // confirmación de que se llegó a la pantalla de dirección
     await expect(page.getByRole('heading', { name: 'Select an address' })).toBeVisible();
+
 });
