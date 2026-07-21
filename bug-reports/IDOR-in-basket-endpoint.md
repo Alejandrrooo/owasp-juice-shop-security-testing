@@ -13,7 +13,7 @@ Any authenticated API user can access another user's basket simply by changing t
 
 1. Log in via Postman at POST /rest/user/login using valid credentials and retrieve the bearer token:
 
-    - email: qaa91136c5@test.com
+    - email: <test-email>
     - password: Test123!
     - token: <bearer_token>
 

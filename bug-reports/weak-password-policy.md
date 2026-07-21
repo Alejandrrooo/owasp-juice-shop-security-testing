@@ -15,7 +15,7 @@ The registration endpoint accepts any password regardless of length, character t
 
         - Body (JSON):
             json {
-                "email": "correo@correo.com",
+                "email": "<test-email>",
                 "password": "a",
                 "passwordRepeat": "a",
                 "securityQuestion": {
