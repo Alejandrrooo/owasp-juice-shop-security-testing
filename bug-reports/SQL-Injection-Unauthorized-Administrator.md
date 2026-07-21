@@ -29,9 +29,7 @@ The server returns a 200 OK response with a valid session token and the administ
 
 ## Impact
 Unauthorized administrative access allows full control over 
-users, products, and orders. An attacker could manipulate or delete 
-data, escalate privileges, and cause irreversible damage to the system 
-and end users.
+users, products, and orders. An attacker could manipulate or delete data, escalate privileges, and cause irreversible damage to the system and end users.
 
 ## Classification
 - Vulnerability: SQL Injection
