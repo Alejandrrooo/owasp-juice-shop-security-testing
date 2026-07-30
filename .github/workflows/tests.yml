@@ -13,6 +13,12 @@ jobs:
       run:
         working-directory: juice-shop-playwright
 
+    services:
+      juice-shop:
+        image: bkimminich/juice-shop:latest
+        ports:
+          - 3000:3000
+
     steps:
       - name: Download the code
         uses: actions/checkout@v4
@@ -30,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: npx playwright test
+
+
+
