@@ -9,21 +9,24 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: juice-shop-playwright
 
     steps:
-      - name: Descargar el código
+      - name: Download the code
         uses: actions/checkout@v4
 
-      - name: Instalar Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: npm install
 
-      - name: Instalar navegadores de Playwright
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Correr tests
+      - name: Run tests
         run: npx playwright test
