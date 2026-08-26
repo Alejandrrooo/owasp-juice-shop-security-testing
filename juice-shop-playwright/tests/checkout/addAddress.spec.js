@@ -12,11 +12,9 @@ test('addNewAddress', async ({ page }) => {
     await doRegistration(page, user);
     await doLogin(page, user);
     await startCheckout(page); 
-
-    const new_address_button = page.getByRole('button', {name:'Add New Address'})
-    await expect(new_address_button).toBeVisible()({ timeout: 10000 })
+     
+    const new_address_button = page.locator('button', { hasText: 'Add New Address' })
+    await expect(new_address_button).toBeVisible({ timeout: 10000 })
     await new_address_button.click()
-
    
-
 })

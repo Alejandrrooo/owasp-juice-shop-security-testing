@@ -9,12 +9,15 @@ export async function addProduct(page, productName) {
 
     const basketCount = page.locator('.fa-layers-counter');
     await basketCount.click();
+
+    // Esperar a que el carrito cargue
+    await page.waitForURL('**/basket', { timeout: 10000 })
    
     const productRow = page
         .locator('mat-row')
         .filter({ hasText: productName });
 
-    await expect(productRow).toBeVisible()
+    await expect(productRow).toBeVisible({ timeout: 10000 })
 
     return { basketCount, productRow };
 }

@@ -11,5 +11,7 @@ export async function startCheckout(page) {
     const checkoutButton = page.locator('#checkoutButton')
     await checkoutButton.click()
 
+    await page.waitForURL('**/#/address/select', { timeout: 10000 })
+
     return {productName, productRow}
 }
