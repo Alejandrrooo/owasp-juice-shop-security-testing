@@ -13,3 +13,7 @@ playwright/.auth/
 
 # Temporary tests
 tests/NOTEST/
+
+# Sensitive data
+juice-shop-playwright/tests/utils/elementos-pagina.csv
+juice-shop-playwright/tests/utils/mapear-elementos.spec.js
