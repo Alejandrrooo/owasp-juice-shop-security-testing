@@ -15,5 +15,5 @@ playwright/.auth/
 tests/NOTEST/
 
 # Sensitive data
-juice-shop-playwright/tests/utils/elementos-pagina.csv
-juice-shop-playwright/tests/utils/mapear-elementos.spec.js
+tests/utils/elementos-pagina.csv
+tests/utils/mapear-elementos.spec.js
