@@ -18,14 +18,15 @@ test ('logout', async ({page}) =>{
     const click_login = page.locator('#loginButton');
     await click_login.click();
 
+    await expect(page.getByLabel('Show the shopping cart')).toBeVisible();
+
     const click_account = page.getByLabel('Show/hide account menu');
     await click_account.click();
 
-    const click_logout = page.getByLabel('Logout');
+    const click_logout = page.locator('#navbarLogoutButton');
     await click_logout.click();
 
     const basket_disappears = page.getByLabel('Show the shopping cart');
     await expect(basket_disappears).not.toBeVisible();
     
-
 })
