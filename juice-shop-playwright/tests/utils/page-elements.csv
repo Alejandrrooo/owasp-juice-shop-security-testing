@@ -1,0 +1,15 @@
+TYPE,TEXT,ID,NAME,PLACEHOLDER
+BUTTON,"menu","null",,
+BUTTON,"OWASP Juice Shop","null",,
+BUTTON,"account_circle Account","navbarAccount",,
+BUTTON,"shopping_cart Your Basket1","null",,
+BUTTON,"language EN","navbarLanguageButton",,
+BUTTON,"navigate_before Back","null",,
+BUTTON,"send Submit","submitButton",,
+INPUT,"mat-input-1","null","null"
+INPUT,"mat-input-10","null","Please provide a country."
+INPUT,"mat-input-11","null","Please provide a name."
+INPUT,"mat-input-13","null","Please provide a ZIP code."
+INPUT,"address","null","Please provide an address."
+INPUT,"mat-input-15","null","Please provide a city."
+INPUT,"mat-input-16","null","Please provide a state."
