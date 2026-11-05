@@ -17,7 +17,6 @@ test ('logout', async ({page}) =>{
 
     const click_login = page.locator('#loginButton');
     await click_login.click();
-
     await expect(page.getByLabel('Show the shopping cart')).toBeVisible();
 
     const click_account = page.getByLabel('Show/hide account menu');

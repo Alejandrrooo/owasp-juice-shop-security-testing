@@ -13,4 +13,3 @@ test('home displays products and account button', async ({ page }) => {
   const account = page.getByLabel('Show/hide account menu');
   await expect(account).toBeVisible();
 });
-//const element = page.getByText('Submit');

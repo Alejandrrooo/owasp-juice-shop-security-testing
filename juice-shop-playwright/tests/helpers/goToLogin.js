@@ -1,13 +1,14 @@
 export async function goToLogin(page) {
   await page.goto('http://localhost:3000');
 
-  const closePopup = page.getByLabel('Close Welcome Banner');
-  if (await closePopup.isVisible()) {
-    await closePopup.click();
-  }
+  await page.getByLabel('Close Welcome Banner')
+  .click({ timeout: 5000 }).catch(() => {});
 
-  const closeCookie = page.getByLabel('dismiss cookie message');
-  await closeCookie.click({ timeout: 3000 }).catch(() => {});
+  await page.locator('.cdk-overlay-backdrop')
+  .waitFor({ state: 'hidden', timeout: 5000 }).catch(() => {});
+
+  await page.getByLabel('dismiss cookie message')
+  .click({ timeout: 3000 }).catch(() => {});
 
   const account = page.getByLabel('Show/hide account menu');
   await account.click();
