@@ -7,9 +7,7 @@ export async function goToLogin(page) {
   }
 
   const closeCookie = page.getByLabel('dismiss cookie message');
-  if (await closeCookie.isVisible()) {
-    await closeCookie.click();
-  }
+  await closeCookie.click({ timeout: 3000 }).catch(() => {});
 
   const account = page.getByLabel('Show/hide account menu');
   await account.click();
